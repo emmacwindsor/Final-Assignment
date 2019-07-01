@@ -1,7 +1,7 @@
 # Final-Assignment
 My Last Project
 
-PLZ READ THE FINALPROJECT.html thats not in the folders, just the one you see first. That is up to date version.
+PLZ read THE FINALPROJECT.html thats not in the folders, just the one you see first. That is up to date version.
 
 Here is what I have for my final assignment so far!
 
