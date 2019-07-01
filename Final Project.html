@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <title>Blend & Snap</title>
+  </head>
+  <style>
+  html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Impact", cursive, sans-serif;
+  }
+  </style>
+  <body style="background-color:hotpink;">
+<head>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: right;
+      width: 33.33%;
+      padding: 1px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
+    </head>
+
+      <div class="column">
+        <img src="Blend_Snap_Logo.jpg" alt="Blend_Snap_Logo"style="width:100%">
+      </div>
+      <div class="column">
+        <img src="Blend_Snap_Logo.jpg" alt="Blend_Snap_Logo"style="width:100%">
+      </div>
+      <div class="column">
+        <img src="Blend_Snap_Logo.jpg" alt="Blend_Snap_Logo"style="width:100%">
+      </div>
+
+
+  </h1>
+<h1><div align="center"</div> Welcome to <a href="https://www.instagram.com/blendandsnappp/">Blend & Snap</a></h1>
+
+  This is a creative outlet to promote and
+  celebrate all the aspects of dance music and all the interesting people who make this culture so exciting.
+  This space is to show people the intricate world of dance music and the selectors and producers who are shaping it past, present, and future.
+  The goal is to turn you onto things you may have never known about, expose you to amazing people who Blend & Snap genuinely support, and
+  explore some socially important topics that are at forefront of keeping this community thriving.
+  Join us on this journey and explore below what we have already been working on.
+  This is only the beginning!
+
+
+<h1><div align="center"</div> Current Library of Blend & Snap Mixes:</h1>
+
+<table>
+  <tr>
+    <td><a href="https://soundcloud.com/blendandsnappp/blend-snap-vol-1">Blend & Snap Vol. 1 by Virginia Lock</a></td>
+    <td><a href="https://soundcloud.com/blendandsnappp/blend-snap-vol-2">Blend & Snap Vol. 2 by Virginia Lock</a></td>
+    <td><a href="https://soundcloud.com/blendandsnappp/blend-snap-vol-3">Blend & Snap Vol. 3 by Virginia Lock</a></td>
+    <td><a href="https://soundcloud.com/blendandsnappp/blend-snap-vol-4">Blend & Snap Vol. 4 by WHOM?</a></td>
+  </tr>
+  <tr>
+    <td><img
+    src="VL Blend and Snap Vol 1 Mix Cover.png" alt="VL_Mix_1" width="300" height="300"></td>
+    <td><img
+    src="VL Blend and Snap Vol 2 Mix Cover.jpg" alt="VL_Mix_2" width="300" height="300"></td>
+    <td><img
+    src="VL Blend and Snap Vol 3 Mix Cover.jpg" alt="VL_Mix_3" width="300" height="300"></td>
+    <td><img
+    src="Whom_ Blend and Snap Vol 4 Mix Cover.jpg" alt="WHOM_Mix_4" width="300" height="300"></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><a href="https://soundcloud.com/blendandsnappp/blend-snap-vol-5-by-inasin">Blend & Snap Vol. 5 by Inasin</a></td>
+    <td><a href="https://soundcloud.com/blendandsnappp/blend-snap-vol-6-by-synchronicity">Blend & Snap Vol. 6 by Synchronicity</a></td>
+    <td><a href="https://soundcloud.com/blendandsnappp/blend-snap-vol6-by-conzie">Blend & Snap Vol. 7 by Conzie</a></td>
+    <td><a href="https://soundcloud.com/blendandsnappp/blend-snap-vol-8">Blend & Snap Vol. 8 by Virginia Lock</a></td>
+  </tr>
+  <tr>
+    <td><img
+    src="Inasin Blend and Snap Vol 5.jpg" alt="Inasin_Mix_5" width="300" height="300"></td>
+    <td><img
+    src="Synchronicity Blend & Snap.jpg" alt="Synchronicity_Mix_6" width="300" height="300"></td>
+    <td><img
+    src="Conzie Blend & Snap.jpg" alt="Conzie_Mix_7" width="300" height="300"></td>
+    <td><img
+    src="VL Blend and Snap Vol 8 Mix Cover.jpg" alt="VL_Mix_8" width="300" height="300"></td>
+  </tr>
+</table>
+
+<h1>Blend & Snap Playlist IWD 2019</h1>
+<iframe width="100%" height="550" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/729299757&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=true"></iframe>
+
+<h1><div align="center"</div> Blend & Snap Spotify Playlist:</h1>
+<iframe src="https://open.spotify.com/embed/playlist/78D2jOSp2YlhGFgntxLUdO" width="1425" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+
+<div align="center"</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <h4>
+    Blend & Snap Artist Pick of the Month: Megan Thee Stallion
+  </h4>
+  <ul id="artist_albums"></ul>
+  <button id="buttonOne">
+    Find Her Albums
+  </button>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+var client_id = 'b12049b91f73493bb92b20ecc909f7d7';
+var client_secret = 'b441ef3b4ddd45b5a8490e40427914c4';
+
+var base64Token = window.btoa(client_id + ':' + client_secret);
+
+$('#buttonOne').click(function(){
+	MakeAPICall();
+});
+
+var MakeAPICall = function() {
+
+	$.ajax({
+    url: 'https://accounts.spotify.com/api/token',
+    beforeSend: function(xhrObj){
+      xhrObj.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+      xhrObj.setRequestHeader("Authorization","Basic " + base64Token);
+    },
+    data: {
+      grant_type: 'client_credentials'
+    },
+    dataType: 'json',
+    method: 'POST',
+    success: function(response) {
+
+      var token = response.access_token;
+
+      SearchAPI(token);
+    }
+  });
+
+};
+
+var SearchAPI = function(token) {
+  var query = 'megan+the+stallion';
+	$.ajax({
+    url: 'https://api.spotify.com/v1/search?q=Megan%20Thee%20Stallion&type=track%2Cartist&market=US&limit=2&offset=5',
+    headers: {
+        'Authorization': 'Bearer ' + token,
+    },
+    method: 'GET',
+    data: {
+     q: 'artist:' + query,
+     type: 'album'
+   },
+   success: function(data){
+     $('#artist_albums').append("<https://open.spotify.com/artist/181bsRPaVXVlUKXrxwZfHK?si=g53zajtHR4yzidRRHbBIGQ>Album:  <strong>" + value.name + "</strong></li>");
+    });
+
+          }
+        });
+      };
+    </script>
+
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+});
+</script>
+
+<p id="test">Blend <b>OR</b> Snap? </p>
+
+<button id="btn1">Blend</button>
+<button id="btn2">Snap</button>
+
+
+
+
+
+
+
+    <div align="center" style="border:3px solid purple">
+    <address>
+    Written by <a href="mailto:promo@blendandsnappromo@gmail.com">Blend & Snap</a>.<br>
+    Visit us at:<br>
+    <a href="https://soundcloud.com/blendandsnappp">Blend & Snap</a><br>
+    Los Angeles<br>
+    USA
+    </address>
+    </div>
+  </body>
+</html>
