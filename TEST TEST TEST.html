@@ -1,0 +1,69 @@
+<html>
+<body>
+
+  <h4>
+    Blend & Snap Artist Pick of the Month: Megan Thee Stallion
+  </h4>
+  <ul id="artist_albums"></ul>
+  <button id="buttonOne">
+    Find Her Albums
+  </button>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+var client_id = 'b12049b91f73493bb92b20ecc909f7d7';
+var client_secret = 'b441ef3b4ddd45b5a8490e40427914c4';
+
+var base64Token = window.btoa(client_id + ':' + client_secret);
+
+$('#buttonOne').click(function(){
+	MakeAPICall();
+});
+
+var MakeAPICall = function() {
+
+	$.ajax({
+    url: 'https://accounts.spotify.com/api/token',
+    beforeSend: function(xhrObj){
+      xhrObj.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+      xhrObj.setRequestHeader("Authorization","Basic " + base64Token);
+    },
+    data: {
+      grant_type: 'client_credentials'
+    },
+    dataType: 'json',
+    method: 'POST',
+    success: function(response) {
+
+      var token = response.access_token;
+
+      SearchAPI(token);
+    }
+  });
+
+};
+
+var SearchAPI = function(token) {
+  var query = 'megan thee stallion';
+	$.ajax({
+    url: 'https://api.spotify.com/v1/artists/{181bsRPaVXVlUKXrxwZfHK}/albums',
+    headers: {
+        'Authorization': 'Bearer ' + token,
+    },
+    method: 'GET',
+    data: {
+     q: 'artist:' + query,
+     type: 'album'
+   },
+   success: function(data){
+     $.each(data.albums.items, function(index, value){
+       $('#artist_albums').append("Album: <strong>" + FEVER + "</strong>"");
+     });
+     </script>
+
+          }
+        });
+      };'
+  </body>
+</html>
