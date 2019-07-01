@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Emma's Page</title>
+  </head>
+<h1>EMMA's Page</h1>
+  <body>
+  This is my HTML webpage for Week 6.
+  I am creating this page as part of an assignment.
+  It has been rather hard to get down how to work this all out, but I think I am getting it down!
+  Computer Programming is actually the last class I am taking before I graduate, so it's crazy to think that
+  I am almost done. I am now going to include a paragraph taken from my career distiction statement.
+  My name is <a href="https://www.facebook.com/emma.windsor">Emma Windsor</a>, and I am a young music business professional.
+  My passion and hard work is what drives my career and what allows me to be so successful in all my positions within the music industry.
+  Over the years, I have worked throughout music management, promotion, marketing, hospitality, and production providing a professional, positive, and dedicated work ethic always.
+  My eagerness to learn more, creative nature, and ability to adapt makes me a great addition to any team, and I hope to share that with you.
+  </body>
+
+    <p><img
+    src="https://media.nationalgeographic.org/assets/photos/000/284/28417.jpg" alt="Rainbow" width="500" height="333"></img></p>
+
+<table>
+  <tr>
+    <td>My</td>
+    <td>Name</td>
+    <td>Is</td>
+  </tr>
+  <tr>
+    <td>Emma</td>
+    <td>Windsor</td>
+    <td>&</td>
+  </tr>
+  <tr>
+    <td>I am in</td>
+    <td>Computer</td>
+    <td>Programming</td>
+  </tr>
+</table><div align="center">
+<p><img
+src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/32555545_10160444726600581_7114518827953553408_n.jpg?_nc_cat=105&_nc_oc=AQk-YTbpoi2AzWSDzOKcH8EwXrzyeR8uOV5_dtmM_p-6_7A_4Chrl9ZSsixe1ibflopmKesEZ_JcMFzynrS6krjO&_nc_ht=scontent-lax3-1.xx&oh=1dd5ea037688482df575901eac0032d1&oe=5D8CB27D"
+alt="LA" width="500" height="333"></img></p></div>
+
+<div align="center" style="border:1px solid purple">
+  <address>
+  Written by <a href="mailto:promo@blendandsnappromo@gmail.com">Emma Windsor</a>.<br>
+  Visit us at:<br>
+  <a href="https://soundcloud.com/blendandsnappp">Blend & Snap</a><br>
+  Los Angeles<br>
+  USA
+  </address>
+</div>
+
+</html>
